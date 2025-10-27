@@ -1,0 +1,19 @@
+---
+layout: "layouts/base.vto"
+---
+
+<section class="[ services ] [] [ region py-xl-2xl ]">
+    <div class="wrapper">
+        {{ content }}
+        <hr>
+        <ul class="grid" role="list">
+            {{ set services = search.pages("type=service", "order") }}
+            {{ for item of services }}
+                <li>
+                    <h2>{{ item.title }}</h2>
+                    <a class="button--link" styles="--button-foreground: red;" href="{{ item.url }}">Lees verder <ion-icon class="color-primary-500" name="arrow-forward-outline"></ion-icon></a>
+                </li>
+            {{ /for }}
+        </ul>
+    </div>
+</section>

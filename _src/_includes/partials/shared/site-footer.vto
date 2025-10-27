@@ -1,0 +1,33 @@
+<footer class="[ site-footer ] [ py-l-xl ]">
+    <div class="site-footer__inner wrapper mt-m">
+        <div class="flex-group flex-group--between">
+            <div class="fs-step-0">
+                &copy; 2025 {{ site.name }}. Alle rechten voorbehouden.
+            </div>
+            <nav class="">
+                <ul class="cluster" role="list">
+                    <li class="nav__item">
+                        <a href="/" class="button--link">Algemene Voorwaarden</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</footer>
+
+
+<!-- Scripts -->
+<script>
+const navToggle = document.querySelector('[aria-controls="site-nav"]');
+
+if (navToggle) {
+  navToggle.addEventListener("click", function () {
+    const isExpanded = navToggle.getAttribute("aria-expanded") === "true";
+    navToggle.setAttribute("aria-expanded", isExpanded ? "false" : "true");
+  });
+};
+</script>
+<script src="js/main.js"></script>
+
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
