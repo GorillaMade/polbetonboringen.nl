@@ -1,0 +1,15 @@
+---
+layout: "layouts/base.vto"
+---
+<section class="[  ] [] [ py-2xl-3xl ]">
+    <div class="wrapper flow text--centered">
+        <h1 class="fw-medium">{{ block_intro.heading }}</h1>
+        <p>{{ block_intro.text }}</p>
+    </div>
+</section>
+<section class="[ about ] [ full-width-split-screen ] [ ]">
+    <img loading="lazy" src="{{ image.path }}" alt="{{ image.description }}">
+    <div class="flow">
+        {{ content }}
+    </div>
+</section>
