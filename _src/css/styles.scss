@@ -39,3 +39,22 @@
 .text--centered {
     text-align: center;
 }
+
+
+//
+//
+//
+
+input, textarea, select {
+    width: 100%;
+    font-size: var(--fs-step--1);
+    line-height: 24px;
+    border: 1px solid var(--neutral-200);
+    padding: var(--space-2xs) var(--space-xs);
+    border-radius: var(--radius-s);
+}
+
+textarea {
+    height: 208px;
+    resize: none;
+}

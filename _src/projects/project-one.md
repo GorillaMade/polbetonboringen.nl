@@ -1,7 +1,7 @@
 ---
 title: "Project one"
 description: ""
-cover_image: "/media/bd983983-0712-45ed-98c5-57866fc3ce6c.JPG"
+cover_image: ""
 ---
 
 ## Wat wij hebben gedaan

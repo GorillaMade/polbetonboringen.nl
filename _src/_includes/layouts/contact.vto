@@ -1,0 +1,38 @@
+---
+layout: "layouts/base.vto"
+---
+
+<section class="[] [ flow ] [ py-xl-3xl ]">
+    <div class="wrapper">
+    
+    <form action="/send" class="flow">
+        <div class="switcher">
+            <div>
+                <div class="field-group">
+                    <label for="naam" class="fs-step--1 fw-medium">Naam</label>
+                    <input id="naam" type="text" name="naam" placeholder="Uw naam" />
+                </div>
+                <div class="field-group mt-3xs">
+                    <label for="email" class="fs-step--1 fw-medium">E-mail</label>
+                    <input id="email" type="email" name="email" placeholder="Uw e-mailadres" />
+                </div>
+                <div class="field-group mt-3xs">
+                    <label for="tel" class="fs-step--1 fw-medium">Telefoon nr.</label>
+                    <input id="tel" type="tel" name="telefoon" placeholder="Telefoonnummer" :required="terugbel" />
+                </div>
+            </div>
+            <div>
+                <div class="field-group">
+                    <label for="bericht" class="fs-step--1 fw-medium">Uw bericht</label>
+                    <textarea id="bericht" name="bericht" rows="4" placeholder="Uw bericht"></textarea>
+                </div>
+            </div>
+        </div>
+        <div class="flex-group flex-group--between">
+            <p class="fs-step--1">Wij nemen zo snel mogelijk contact met u op</p>
+            <button type="submit" class="button" data-button-variant="primary">Verzend</button>
+        </div>
+    </form>
+
+    </div>
+</section>

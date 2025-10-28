@@ -52,3 +52,23 @@ $hamburger-bar-color: var(--neutral-950);
 $hamburger-bar-width: 36px;
 $hamburger-bar-height: 6px;
 $hamburger-bar-gap: 4px;
+
+
+// -----------------------------------------------------------------------------
+// Button
+// -----------------------------------------------------------------------------
+
+$button-font-size: var(--fs-400);
+$button-font-weight: var(--fw-medium);
+
+$button-foreground: var(--neutral-50);
+$button-foreground-hover: var(--neutral-50);
+$button-background: var(--neutral-200);
+$button-background-hover: var(--primary-600);
+
+$button-padding: .75rem 1.5rem;
+
+$button-border-width: 2px;
+$button-border-style: solid;
+$button-border-color: var(--button-border-color, transparent);
+$button-border-radius: var(--radius-m);
