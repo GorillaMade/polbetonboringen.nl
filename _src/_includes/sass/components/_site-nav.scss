@@ -39,29 +39,31 @@
 
 .site-nav {
     .nav__link {
-        --nav-link-foreground: #{$site-nav-link-foreground};
-        --nav-link-foreground-hover: #{$site-nav-link-foreground-hover};
-        --nav-link-foreground-active: #{$site-nav-link-foreground-active};
+        --_nav-link-foreground: var(--nav-link-foreground, #{$site-nav-link-foreground});
+        --_nav-link-foreground-hover: var(--nav-link-foreground-hover, #{$site-nav-link-foreground-hover});
+        --_nav-link-foreground-active: var(--nav-link-foreground-active, #{$site-nav-link-foreground-active});
 
-        --nav-link-background: #{$site-nav-link-background};
-        --nav-link-background-hover: #{$site-nav-link-background-hover};
-        --nav-link-background-active:#{$site-nav-link-background-active};
+        --_nav-link-background: var(--nav-link-background, #{$site-nav-link-background});
+        --_nav-link-background-hover: var(--nav-link-background-hover, #{$site-nav-link-background-hover});
+        --_nav-link-background-active: var(--nav-link-background-active, #{$site-nav-link-background-active});
 
         --nav-link-font-size: #{$site-nav-link-font-size};
         --nav-link-border-radius: #{$site-nav-link-border-radius};
 
         text-decoration: none;
         text-align: center;
+        color: var(--_nav-link-foreground);
+        background: var(--_nav-link-background);
 
         &:hover {
-            --nav-link-foreground: var(--nav-link-foreground-hover);
-            --nav-link-background: var(--nav-link-background-hover);
+            --nav-link-foreground: var(--_nav-link-foreground-hover);
+            --nav-link-background: var(--_nav-link-background-hover);
         }
 
 
         &[aria-current="page"] {
-            --nav-link-foreground: var(--nav-link-foreground-active);
-            --nav-link-background: var(--nav-link-background-active);
+            --nav-link-foreground: var(--_nav-link-foreground-active);
+            --nav-link-background: var(--_nav-link-background-active);
         }
     }
 }

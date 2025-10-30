@@ -14,7 +14,7 @@
         </li>
         {{ else }}
         <li class="nav__item">
-            <a href="{{ entry.url |> url }}" class="nav__link" {{ if url == entry.url || (url.startsWith(entry.url) && entry.url != "/" && url.length > entry.url.length) }} aria-current="page" {{ /if }}>{{ entry.menu.title }}</a>
+            <a class="nav__link" href="{{ entry.url |> url }}" {{ if url == entry.url || (url.startsWith(entry.url) && entry.url != "/" && url.length > entry.url.length) }} aria-current="page" {{ /if }}>{{ entry.menu.title }}</a>
         </li>
         {{ /if }}
     {{ /for }}

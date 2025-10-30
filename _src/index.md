@@ -10,19 +10,13 @@ menu:
   url: "/"
   order: 1
 
+block_hero:
+  image: "https://images.unsplash.com/photo-1621905251189-08b45d6a269e?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=2069"
+
 block_services:
-  list:
-    - name: "Tab number 1"
-      id: 1
-      description: |
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestias voluptates totam iste facere pariatur eaque non modi cumque ducimus? Cum ducimus quasi non quibusdam illo nobis doloribus, sequi quidem dolore quis doloremque a aspernatur iste, rem, commodi quia laudantium quam? Ipsa, nesciunt numquam architecto placeat accusamus obcaecati deserunt odio tempora, voluptatem reiciendis ad assumenda, dolor quia officiis perferendis sequi qui repudiandae! Recusandae enim dicta ipsa quos, optio architecto quae laudantium necessitatibus sed a sunt culpa voluptatem totam, vel quod? Odit rerum earum ipsum ex blanditiis in dolor animi. Modi cumque temporibus architecto laborum sequi ipsam quasi magnam dignissimos impedit fuga
-    
-    - name: "Tab number 2"
-      id: 2
-      description: |
-        Tab 2
+  heading: "Mijn diensten"
 ---
 
-# Pol betonboringen
+# De specialist in betonboringen en zaagwerken
 
-Dit is een begin
+Pol Betonboringen levert strak werk, op tijd en volgens afspraak. Voor elk project, groot of klein.

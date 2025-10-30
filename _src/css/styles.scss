@@ -9,7 +9,7 @@
 // -----------------------------------------------------------------------------
 
 .brand {
-    --brand-color: var(--accent-500);
+    --brand-color: var(--neutral-800);
 
     display: flex;
     align-items: center;
@@ -40,6 +40,15 @@
     text-align: center;
 }
 
+.ai--center {
+    align-items: center;
+}
+
+
+.no-gap {
+    gap: 0;
+}
+
 
 //
 //
@@ -57,4 +66,43 @@ input, textarea, select {
 textarea {
     height: 208px;
     resize: none;
+}
+
+
+//
+//
+//
+
+.circle {
+    padding: var(--space-xs);
+    border-radius: 100;
+    background: var(--primary-100);
+    line-height: 0;
+    color: var(--primary-800);
+}
+
+
+// -----------------------------------------------------------------------------
+// Hero
+// -----------------------------------------------------------------------------
+
+.hero {
+    overflow: clip;
+    align-items: center;
+    max-height: 70dvh;
+    background: linear-gradient(180deg, transparent 0%, transparent 50%, var(--primary-900) 100%);
+
+    &__image {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        z-index: var(--layer-below);
+        opacity: .8;
+    }
+
+    &__inner {
+        color: var(--neutral-50);
+        justify-content: center;
+        z-index: var(--layer-2);
+    }
 }

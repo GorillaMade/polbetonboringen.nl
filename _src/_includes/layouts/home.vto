@@ -2,29 +2,55 @@
 layout: "layouts/base.vto"
 ---
 
-<section class="[ hero ] [] [ region py-xl-2xl ]">
-    <div class="hero__inner wrapper flow">
+<section class="[ hero ] [ stack ] [ region ]">
+    <img class="hero__image" src="{{ block_hero.image }}" alt="hero image">
+    <div class="hero__inner wrapper flow py-xl-3xl text--centered">
         {{ content }}
     </div>
 </section>
-<section class="[ diensten ] [] [ py-xl-2xl ]">
+<section class="[ line ] [  ] [ py-s-l ]">
+<div class="wrapper">
+    <div class="flex-group flex-group--between ai--center">
+        <div class="flex-group ai--center">
+            <span class="circle">
+                <ion-icon name="checkmark-outline"></ion-icon>
+            </span>
+            <span>Vakmanschap en ervaring</span>
+        </div>
+        <div class="flex-group ai--center">
+            <span class="circle">
+                <ion-icon name="checkmark-outline"></ion-icon>
+            </span>
+            <span>Betrouwbaarheid en stipte service</span>
+        </div>
+        <div class="flex-group ai--center">
+            <span class="circle">
+                <ion-icon name="checkmark-outline"></ion-icon>
+            </span>
+            <span>Veilig en duurzaam werken</span>
+        </div>
+    </div>
+</div>
+</section>
+<section class="[ diensten ] [ bg-neutral-50 ] [ py-xl-2xl ]">
     <div class="wrapper">
         <ul class="grid" data-layout="thirds" role="list">
-            <li>
-                <h3>Dienst #1</h3>
-            </li>
-            <li>
-                <h3>Dienst #2</h3>
-            </li>
-            <li>
-                <h3>Dienst #3</h3>
-            </li>
+            {{ set services = search.pages("type=service", "featured=true") }}
+            {{ for item of services }}
+                <li class="text--centered bg-neutral-0">
+                    <img src="{{ item.cover_image }}" alt="">
+                    <div class="flow px-m pb-m">
+                        <h2 class="fs-step-1 color-primary-900">{{ item.title }}</h2>
+                        <hr>
+                        {{ item.description |> md }}
+                    </div>
+                </li>
+            {{ /for }}
         </ul>
     </div>
 </section>
 <section class="[  ] [] [ py-xl-2xl ]">
     <div class="wrapper">
-
-
+    
     </div>
 </section>
