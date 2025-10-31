@@ -21,12 +21,12 @@ $site-header-padding-block: var(--space-3xs);
 $site-nav-list-gap: 1px;
 
 $site-nav-link-foreground: var(--neutral-400);
-$site-nav-link-foreground-hover: var(--accent-600);
-$site-nav-link-foreground-active: var(--accent-800);
+$site-nav-link-foreground-hover: var(--neutral-600);
+$site-nav-link-foreground-active: var(--primary-800);
 
 $site-nav-link-background: transparent;
-$site-nav-link-background-hover: var(--accent-50);
-$site-nav-link-background-active: var(--accent-100);
+$site-nav-link-background-hover: transparent;
+$site-nav-link-background-active: var(--primary-50);
 
 $site-nav-link-font-family: inherit;
 $site-nav-link-font-size: var(--fs-step-0);
@@ -63,8 +63,8 @@ $button-font-weight: var(--fw-medium);
 
 $button-foreground: var(--neutral-50);
 $button-foreground-hover: var(--neutral-50);
-$button-background: var(--neutral-200);
-$button-background-hover: var(--primary-600);
+$button-background: var(--neutral-500);
+$button-background-hover: var(--neutral-600);
 
 $button-padding: .75rem 1.5rem;
 

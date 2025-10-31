@@ -74,11 +74,18 @@ textarea {
 //
 
 .circle {
-    padding: var(--space-xs);
+    padding: var(--space-s);
     border-radius: 100;
     background: var(--primary-100);
     line-height: 0;
     color: var(--primary-800);
+}
+
+hr.small {
+    width: 4rem;
+    height: .15rem;
+    background: var(--accent-500);
+    border: none;
 }
 
 
@@ -89,7 +96,7 @@ textarea {
 .hero {
     overflow: clip;
     align-items: center;
-    max-height: 70dvh;
+    max-height: 80dvh;
     background: linear-gradient(180deg, transparent 0%, transparent 50%, var(--primary-900) 100%);
 
     &__image {

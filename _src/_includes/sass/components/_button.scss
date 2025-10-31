@@ -78,10 +78,12 @@ button:has(.button) {
 .button {
     &[data-button-variant="primary"] {
         --button-background: var(--primary-500);
+        --button-background-hover: var(--primary-800);
     }
 
     &[data-button-variant="accent"] {
         --button-background: var(--accent-500);
+        --button-background-hover: var(--accent-800);
     }
 }
 

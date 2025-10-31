@@ -8,26 +8,26 @@ layout: "layouts/base.vto"
         {{ content }}
     </div>
 </section>
-<section class="[ line ] [  ] [ py-s-l ]">
+<section class="[ line ] [  ] [ py-m ]">
 <div class="wrapper">
     <div class="flex-group flex-group--between ai--center">
         <div class="flex-group ai--center">
             <span class="circle">
                 <ion-icon name="checkmark-outline"></ion-icon>
             </span>
-            <span>Vakmanschap en ervaring</span>
+            <span class="fs-step--1">Vakmanschap en ervaring</span>
         </div>
         <div class="flex-group ai--center">
             <span class="circle">
                 <ion-icon name="checkmark-outline"></ion-icon>
             </span>
-            <span>Betrouwbaarheid en stipte service</span>
+            <span class="fs-step--1">Betrouwbaarheid en stipte service</span>
         </div>
         <div class="flex-group ai--center">
             <span class="circle">
                 <ion-icon name="checkmark-outline"></ion-icon>
             </span>
-            <span>Veilig en duurzaam werken</span>
+            <span class="fs-step--1">Veilig en duurzaam werken</span>
         </div>
     </div>
 </div>
@@ -37,11 +37,11 @@ layout: "layouts/base.vto"
         <ul class="grid" data-layout="thirds" role="list">
             {{ set services = search.pages("type=service", "featured=true") }}
             {{ for item of services }}
-                <li class="text--centered bg-neutral-0">
+                <li class="dienst text--centered bg-neutral-0">
                     <img src="{{ item.cover_image }}" alt="">
                     <div class="flow px-m pb-m">
-                        <h2 class="fs-step-1 color-primary-900">{{ item.title }}</h2>
-                        <hr>
+                        <h3 class="fs-step-1 fw-medium color-neutral-900">{{ item.title }}</h3>
+                        <hr class="small">
                         {{ item.description |> md }}
                     </div>
                 </li>
@@ -49,8 +49,10 @@ layout: "layouts/base.vto"
         </ul>
     </div>
 </section>
-<section class="[  ] [] [ py-xl-2xl ]">
-    <div class="wrapper">
-    
+<section class="[  ] [ ] [ py-xl-2xl ]">
+    <div class="wrapper text--centered">
+        <h2 class="mt-0 fs-step-2 color-neutral-900">Recente projecten</h2>
+        <hr class="small">
+        <p>Een blik op recente projecten, met vakmanschap, precisie en trots uitgevoerd voor tevreden klanten</p>
     </div>
 </section>
