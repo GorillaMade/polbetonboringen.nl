@@ -33,26 +33,32 @@ layout: "layouts/base.vto"
 </div>
 </section>
 <section class="[ diensten ] [ bg-neutral-50 ] [ py-xl-2xl ]">
-    <div class="wrapper">
+    <div class="wrapper text--centered">
         <ul class="grid" data-layout="thirds" role="list">
-            {{ set services = search.pages("type=service", "featured=true") }}
+            {{ set services = search.pages("type=service")
+                .filter(p => p.featured)
+                .slice(0, 3) 
+            }}
             {{ for item of services }}
                 <li class="dienst text--centered bg-neutral-0">
-                    <img src="{{ item.cover_image }}" alt="">
+                    <a href="{{ item.url }}">
+                        <img class="dienst__image" src="{{ item.cover_image }}" alt="">
+                    </a>
                     <div class="flow px-m pb-m">
-                        <h3 class="fs-step-1 fw-medium color-neutral-900">{{ item.title }}</h3>
-                        <hr class="small">
+                        <h3 class="fs-step-1 fw-medium color-neutral-900"><a href="{{ item.url }}">{{ item.title }}</a></h3>
+                        <hr class="line line--small">
                         {{ item.description |> md }}
                     </div>
                 </li>
             {{ /for }}
         </ul>
+        <a href="/diensten" class="button mt-xl" data-button-variant="accent" data-button-ghost>Alle diensten</a>
     </div>
 </section>
 <section class="[  ] [ ] [ py-xl-2xl ]">
-    <div class="wrapper text--centered">
+    <div class="wrapper flow text--centered">
         <h2 class="mt-0 fs-step-2 color-neutral-900">Recente projecten</h2>
-        <hr class="small">
+        <hr class="line">
         <p>Een blik op recente projecten, met vakmanschap, precisie en trots uitgevoerd voor tevreden klanten</p>
     </div>
 </section>

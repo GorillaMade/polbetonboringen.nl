@@ -1,17 +1,26 @@
 ---
 layout: "layouts/base.vto"
 ---
-
-<section class="[ services ] [] [ region py-xl-2xl ]">
+<section>
     <div class="wrapper">
+        <h1>{{ title }}</h1>
+    </div>
+</section>
+<section class="[ services ] [] [ region py-xl-2xl ]">
+    <div class="wrapper text--centered">
         {{ content }}
-        <hr>
         <ul class="grid" role="list" data-layout="thirds">
-            {{ set services = search.pages("type=service", "order") }}
+            {{ set services = search.pages("type=service") }}
             {{ for item of services }}
-                <li>
-                    <h2 class="fs-step-1">{{ item.title }}</h2>
-                    <a class="button--link" styles="--button-foreground: red;" href="{{ item.url }}">Lees verder <ion-icon class="color-primary-500" name="arrow-forward-outline"></ion-icon></a>
+                <li class="dienst text--centered bg-neutral-0">
+                    <a href="{{ item.url }}">
+                        <img class="dienst__image" src="{{ item.cover_image }}" alt="">
+                    </a>
+                    <div class="flow px-m pb-m">
+                        <h3 class="fs-step-1 fw-medium color-neutral-900"><a href="{{ item.url }}">{{ item.title }}</a></h3>
+                        <hr class="line line--small">
+                        {{ item.description |> md }}
+                    </div>
                 </li>
             {{ /for }}
         </ul>

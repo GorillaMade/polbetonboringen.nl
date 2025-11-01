@@ -41,7 +41,8 @@
 
 
 
-.hamburger.open {
+.hamburger.open,
+.hamburger[aria-expanded="true"] {
     .bar {
         &--1 {
             rotate: 45deg;

@@ -11,6 +11,8 @@ menu:
   order: 3
 ---
 
-# Diensten
+# Onze Diensten{.mt-0}
 
-Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas debitis, iure et, voluptatem magni mollitia quis cupiditate nisi ab exercitationem minima odio perferendis nesciunt similique expedita perspiciatis. Vitae perspiciatis minus sit ullam ab. Tempore, eligendi. Veritatis exercitationem vero culpa, deleniti, earum maiores magnam sed aut quidem quae deserunt cumque expedita.
+Hieronder vindt u een overzicht van onze belangrijkste diensten op het gebied van betonboringen en sleufwerken.
+
+<hr class="line">

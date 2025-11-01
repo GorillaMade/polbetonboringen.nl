@@ -33,11 +33,12 @@
 
     &:hover,
     &:focus-visible {
-        color: var(--color-accent, #0050ff);
-        background-color: var(--color-accent-bg, rgba(0, 80, 255, 0.1));
+        color: var(--_nav-foreground);
+        background-color: var(--_nav-background);
     }
 
-    .is-active {
+    .is-active,
+    &[aria-current="page"] {
         font-weight: var(--fw-semibold);
     }
 }
@@ -66,6 +67,9 @@
 
     .nav__item {
         width: 100%;
+        &:not(:last-child) {
+            border-bottom: 1px solid var(--neutral-100);
+        }
     }
 
     .nav__link {

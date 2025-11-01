@@ -1,21 +1,23 @@
 ---
 layout: "layouts/base.vto"
 ---
-<section class="[  ] [] [ py-2xl-3xl ]">
+{{# <section class="[  ] [] [ py-2xl-3xl ]">
     <div class="wrapper flow text--centered">
         <h1 class="fw-medium">{{ block_intro.heading }}</h1>
         <p>{{ block_intro.text }}</p>
     </div>
-</section>
-<section class="[ about ] [ ] [ py-xl-3xl ]">
-    <div class="wrapper">
-        <div class="switcher">
-            <div>
-                <img loading="lazy" src="{{ image.path }}" alt="{{ image.description }}">
-            </div>
+</section> #}}
+<section class="[ about ] [ full-width-split-screen ] [ py-xl-3xl ]">
+            <img class="about__image" loading="lazy" src="{{ image.path }}" alt="{{ image.description }}">
             <div class="flow">
-                {{ content }}
+                <h1>{{ block_about.heading }}</h1>
+                {{ block_about.body |> md }}
+                <div>
+                    <ul class="checklist mt-m">
+                        {{ for item of block_about.list }}
+                            <li>{{ item }}</li>
+                        {{ /for }}
+                    </ul>
+                </div>
             </div>
-        </div>
-    </div>
 </section>

@@ -3,7 +3,21 @@ layout: "layouts/base.vto"
 ---
 
 <section class="[ service ] [] [ region py-xl-2xl ]">
-    <div class="wrapper">
-        {{ content }}
+    <div class="wrapper sidebar">
+        <aside>
+            {{ set services = search.pages("type=service") }}
+            <nav class="nav nav--vertical">
+                <ul class="nav__list">
+                    {{ for item of services }}
+                    <li class="nav__item">
+                        <a href="{{ item.url }}" class="nav__link" {{ if url == item.url || (url.startsWith(item.url) && item.url != "/" && url.length > item.url.length) }} aria-current="page" {{ /if }}>{{ item.title }}</a>
+                    </li>
+                    {{ /for }}
+                </ul>
+            </nav>
+        </aside>
+        <div class="content">
+            {{ content }}
+        </div>
     </div>
 </section>

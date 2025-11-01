@@ -74,18 +74,46 @@ textarea {
 //
 
 .circle {
-    padding: var(--space-s);
+    padding: var(--space-xs);
     border-radius: 100;
     background: var(--primary-100);
     line-height: 0;
     color: var(--primary-800);
 }
 
-hr.small {
-    width: 4rem;
+hr.line {
+    --_hr-width: var(--hr-width, 5rem);
+    --_hr-color: var(--hr-color, var(--accent-500));
+    width: var(--_hr-width);
     height: .15rem;
-    background: var(--accent-500);
+    background: var(--_hr-color);
     border: none;
+    margin-block: var(--space-s);
+
+    &--small {
+        --hr-width: 2rem;
+    }
+}
+
+
+.checklist {
+    list-style: none;
+}
+
+.checklist li {
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding-left: var(--space-l); /* ruimte voor de checkmark */
+    margin-bottom: var(--space-xs);
+}
+
+.checklist li::before {
+    content: "✔"; /* de checkmark */
+    position: absolute;
+    left: 0;
+    color: green; /* kleur van de check */
+    font-weight: bold;
 }
 
 
@@ -111,5 +139,41 @@ hr.small {
         color: var(--neutral-50);
         justify-content: center;
         z-index: var(--layer-2);
+    }
+}
+
+
+// -----------------------------------------------------------------------------
+// Over mij
+// -----------------------------------------------------------------------------
+
+.about {
+    .switcher {
+        align-items: center;
+    }
+
+    &__image img {
+        overflow: clip;
+        border-radius: var(--radius-full);
+        aspect-ratio: 1;
+        object-fit: cover;
+    }
+}
+
+
+
+// -----------------------------------------------------------------------------
+// Diensten
+// -----------------------------------------------------------------------------
+
+.diensten {}
+
+.dienst {
+
+    &__image {
+        aspect-ratio: 16/9;
+        object-fit: cover;
+        width: 100%;
+        height: auto;
     }
 }
