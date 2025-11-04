@@ -6,7 +6,7 @@ layout: "layouts/base.vto"
     <div class="wrapper sidebar">
         <aside>
             {{ set services = search.pages("type=service") }}
-            <nav class="nav nav--vertical">
+            <nav class="nav nav--vertical bg-neutral-50">
                 <ul class="nav__list">
                     {{ for item of services }}
                     <li class="nav__item">
@@ -16,7 +16,8 @@ layout: "layouts/base.vto"
                 </ul>
             </nav>
         </aside>
-        <div class="content">
+        <div class="content flow">
+            <img src="{{ cover_image }}" alt="{{ title }}">
             {{ content }}
         </div>
     </div>

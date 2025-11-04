@@ -74,11 +74,19 @@ textarea {
 //
 
 .circle {
+    --_circle-foreground: var(--circle-foreground, var(--primary-800));
+    --_circle-background: var(--circle-background, var(--primary-100));
+
     padding: var(--space-xs);
     border-radius: 100;
-    background: var(--primary-100);
+    background: var(--_circle-background);
     line-height: 0;
-    color: var(--primary-800);
+    color: var(--_circle-foreground);
+
+    &--outline {
+        background: transparent;
+        border: 1px solid var(--_circle-background);
+    }
 }
 
 hr.line {
@@ -128,7 +136,7 @@ hr.line {
     background: linear-gradient(180deg, transparent 0%, transparent 50%, var(--primary-900) 100%);
 
     &__image {
-        width: 100%;
+        width: 100dvw;
         height: 100%;
         object-fit: cover;
         z-index: var(--layer-below);
