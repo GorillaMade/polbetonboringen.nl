@@ -19,4 +19,9 @@
         --grid-placement: auto-fit;
         --grid-min-item-size: clamp(13rem, 33%, 26rem);
     }
+
+    &[data-layout="quarters"] {
+        --grid-placement: auto-fit;
+        --grid-min-item-size: clamp(9rem, 25%, 20rem);
+    }
 }

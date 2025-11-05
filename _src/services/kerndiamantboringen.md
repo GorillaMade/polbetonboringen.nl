@@ -2,7 +2,7 @@
 title: "Kerndiamantboringen"
 description: "Kerndiamantboringen voor het maken van doorgangen en ramen in beton."
 cover_image: "/media/diensten/kerndiamantboringen.jpg"
-featured: true
+featured: false
 order: 4
 ---
 

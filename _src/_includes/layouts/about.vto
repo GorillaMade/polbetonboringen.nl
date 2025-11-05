@@ -7,8 +7,12 @@ layout: "layouts/base.vto"
         <p>{{ block_intro.text }}</p>
     </div>
 </section> #}}
-<section class="[ about ] [ full-width-split-screen ] [ py-xl-3xl ]">
-            <img class="about__image" loading="lazy" src="{{ image.path }}" alt="{{ image.description }}">
+<section class="[ about ] [ ] [ py-xl-3xl ]">
+    <div class="wrapper">
+        <div class="switcher">
+            <div class="about__image">
+                <img class="" loading="lazy" src="{{ image.path }}" alt="{{ image.description }}">
+            </div>
             <div class="flow">
                 <h1>{{ block_about.heading }}</h1>
                 {{ block_about.body |> md }}
@@ -20,4 +24,6 @@ layout: "layouts/base.vto"
                     </ul>
                 </div>
             </div>
+        </div>
+    </div>
 </section>

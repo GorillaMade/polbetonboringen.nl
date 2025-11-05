@@ -5,7 +5,8 @@ layout: "layouts/base.vto"
 <section class="[ hero ] [ stack ] [ region ]">
     <img class="hero__image" src="{{ block_hero.image }}" alt="hero image">
     <div class="hero__inner wrapper flow py-xl-3xl text--centered">
-        {{ content }}
+        <h1>{{ block_hero.heading }}</h1>
+        {{ block_hero.body |> md }}
     </div>
 </section>
 <section class="[ line ] [  ] [ py-m ]">
@@ -35,30 +36,59 @@ layout: "layouts/base.vto"
 <section class="[ diensten ] [ bg-neutral-50 ] [ py-xl-2xl ]">
     <div class="wrapper text--centered">
         <ul class="grid" data-layout="thirds" role="list">
-            {{ set services = search.pages("type=service")
-                .filter(p => p.featured)
-                .slice(0, 3) 
-            }}
+            {{ set services = search.pages("type=service").sort((a, b) => a.order - b.order).slice(0, 3) }}
             {{ for item of services }}
-                <li class="dienst text--centered bg-neutral-0">
-                    <a href="{{ item.url }}">
-                        <img class="dienst__image" src="{{ item.cover_image }}" alt="">
-                    </a>
-                    <div class="flow px-m pb-m">
-                        <h3 class="fs-step-1 fw-medium color-neutral-900"><a href="{{ item.url }}">{{ item.title }}</a></h3>
-                        <hr class="line line--small">
-                        {{ item.description |> md }}
-                    </div>
-                </li>
+            <li class="dienst text--centered bg-neutral-0">
+                <a href="{{ item.url }}">
+                <img class="dienst__image" src="{{ item.cover_image }}" alt="">
+                </a>
+                <div class="flow px-m pb-m">
+                <h3 class="fs-step-1 fw-medium color-neutral-900">
+                    <a href="{{ item.url }}">{{ item.title }}</a>
+                </h3>
+                <hr class="line line--small">
+                {{ item.description |> md }}
+                </div>
+            </li>
             {{ /for }}
         </ul>
         <a href="/diensten" class="button mt-xl" data-button-variant="accent" data-button-ghost>Alle diensten</a>
     </div>
 </section>
-<section class="[  ] [ ] [ py-xl-2xl ]">
+<section class="[ portfolio ] [ ] [ py-xl-2xl ]">
     <div class="wrapper flow text--centered">
-        <h2 class="mt-0 fs-step-2 color-neutral-900">Recente projecten</h2>
+        <h2 class="mt-0 fs-step-2 color-neutral-900">{{ block_portfolio.heading }}</h2>
         <hr class="line">
-        <p>Een blik op recente projecten, met vakmanschap, precisie en trots uitgevoerd voor tevreden klanten</p>
+        <div class="mb-s-l">{{ block_portfolio.body |> md }}</div>
+        <ul class="grid" role="list" data-layout="quarters">
+            {{ set portfolio = search.pages("type=project").slice(0, 4) }}
+            {{ for item of portfolio }}
+                <li>
+                    {{ item.title }}
+                </li>
+            {{ /for }}
+        </ul>
+    </div>
+    <div class=" bg-neutral-100 py-xl-2xl mt-s-l">
+        <div class="wrapper wrapper--wide flex-group ai--center jc--center">
+            <p class="fs-step-1 fw-medium mt-0">Bekijk mijn complete portfolio</p>
+            <a href="/projecten" class="button" data-button-variant="accent">Bekijk alle projecten</a>
+        </div>
+    </div>
+</section>
+<section class="[ about ] [ ] [ py-xl-2xl ]">
+    <div class="wrapper flow text--centered">
+        <h2 class="mt-0 fs-step-2 color-neutral-900">{{ block_about.heading }}</h2>
+        <hr class="line">
+        {{ block_about.body |> md }}
+        <div class="switcher mt-xl">
+            <div class="about__image">
+                <img loading="lazy" src="{{ block_about.image.path }}" alt="{{ block_about.image.description }}">
+            </div>
+            <div class="flow">
+                <h1>text</h1>
+                <p>text</p>
+            </div>
+        </div>
     </div>
 </section>
