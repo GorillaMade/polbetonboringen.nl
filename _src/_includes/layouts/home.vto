@@ -38,9 +38,9 @@ layout: "layouts/base.vto"
         <ul class="grid" data-layout="thirds" role="list">
             {{ set services = search.pages("type=service").sort((a, b) => a.order - b.order).slice(0, 3) }}
             {{ for item of services }}
-            <li class="dienst text--centered bg-neutral-0">
+            <li class="item text--centered bg-neutral-0">
                 <a href="{{ item.url }}">
-                <img class="dienst__image" src="{{ item.cover_image }}" alt="">
+                    <img class="item__image" src="{{ item.cover_image }}" alt="">
                 </a>
                 <div class="flow px-m pb-m">
                 <h3 class="fs-step-1 fw-medium color-neutral-900">
@@ -85,10 +85,15 @@ layout: "layouts/base.vto"
             <div class="about__image">
                 <img loading="lazy" src="{{ block_about.image.path }}" alt="{{ block_about.image.description }}">
             </div>
-            <div class="flow">
-                <h1>text</h1>
-                <p>text</p>
-            </div>
+            <ul class="text--left">
+                {{ for item of block_about.list }}
+                <li class="feature">
+                        <h3 class="fs-step-1 color-primary-950">{{ item.title }}</h3>
+                        <p>{{ item.body }}</p>
+                </li>
+                {{ /for }}
+            </ul>
         </div>
     </div>
 </section>
+

@@ -6,15 +6,15 @@ layout: "layouts/base.vto"
         <h1>{{ title }}</h1>
     </div>
 </section>
-<section class="[ services ] [] [ region py-xl-2xl ]">
+<section class="[ diensten ] [] [ region py-xl-2xl ]">
     <div class="wrapper text--centered">
         {{ content }}
         <ul class="grid" role="list" data-layout="thirds">
             {{ set services = search.pages("type=service") }}
             {{ for item of services }}
-                <li class="dienst text--centered bg-neutral-0">
+                <li class="item text--centered bg-neutral-0">
                     <a href="{{ item.url }}">
-                        <img class="dienst__image" src="{{ item.cover_image }}" alt="">
+                        <img class="item__image" src="{{ item.cover_image }}" alt="">
                     </a>
                     <div class="flow px-m pb-m">
                         <h3 class="fs-step-1 fw-medium color-neutral-900"><a href="{{ item.url }}">{{ item.title }}</a></h3>

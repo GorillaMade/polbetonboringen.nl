@@ -40,6 +40,10 @@
     text-align: center;
 }
 
+.text--left {
+    text-align: left;
+}
+
 .ai--center {
     align-items: center;
 }
@@ -178,14 +182,29 @@ hr.line {
 // Diensten
 // -----------------------------------------------------------------------------
 
-.diensten {}
+.diensten {
+    .item {
 
-.dienst {
+        &__image {
+            aspect-ratio: 16/9;
+            object-fit: cover;
+            width: 100%;
+            height: auto;
+        }
+    }
+}
 
-    &__image {
-        aspect-ratio: 16/9;
-        object-fit: cover;
-        width: 100%;
-        height: auto;
+.dienst {}
+
+
+//
+//
+//
+
+@media (width > 970px) {
+    footer .columns {
+        display: grid;
+        grid-template-columns: 1fr auto auto;
+        gap: var(--space-xl-2xl);
     }
 }

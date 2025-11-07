@@ -32,4 +32,14 @@ block_about:
   image:
     path: "https://images.unsplash.com/photo-1672748341520-6a839e6c05bb?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1974"
     description: "Profile picture"
+  list:
+    - title: "Meer dan 15 jaar aan ervaring"
+      icon: ""
+      body: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos mollitia quisquam reprehenderit nihil officiis quibusdam veniam, quasi quis velit facilis!"
+    - title: "Beste matrialen"
+      icon: ""
+      body: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos mollitia quisquam reprehenderit nihil officiis quibusdam veniam, quasi quis velit facilis!"
+    - title: "Profesionele standaard"
+      icon: ""
+      body: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos mollitia quisquam reprehenderit nihil officiis quibusdam veniam, quasi quis velit facilis!"
 ---

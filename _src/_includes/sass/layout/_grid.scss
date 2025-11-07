@@ -17,7 +17,7 @@
 
     &[data-layout="thirds"] {
         --grid-placement: auto-fit;
-        --grid-min-item-size: clamp(13rem, 33%, 26rem);
+        --grid-min-item-size: clamp(16rem, 33%, 26rem);
     }
 
     &[data-layout="quarters"] {

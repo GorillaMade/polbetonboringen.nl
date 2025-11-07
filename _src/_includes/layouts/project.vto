@@ -1,14 +1,9 @@
 ---
 layout: "layouts/base.vto"
 ---
-<section class="[ project ] [ stack ] [ bg-neutral-950 ]">
-    <img class="project__image--featured" src="{{ cover_image }}" alt="{{ title }}">
-    <div class="wrapper">
-        <h1 class="mt-0">{{ title }}</h1>
-    </div>
-</section>
 <section class="[ project--content ] [] [ region py-xl-2xl ]">
-    <div class="wrapper wrapper--wide">
+    <div class="wrapper wrapper--wide flow">
+        <img class="project__image--featured" src="{{ cover_image }}" alt="{{ title }}">
         {{ content }}
 
         <ul class="grid" data-layout="thirds" role="list">
