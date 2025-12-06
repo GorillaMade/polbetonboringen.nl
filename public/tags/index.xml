@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on Pol Betonboringen</title>
+    <link>http://localhost:1313/tags/</link>
+    <description>Recent content in Tags on Pol Betonboringen</description>
+    <generator>Hugo</generator>
+    <language>nl</language>
+    <atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Betonboringen</title>
+      <link>http://localhost:1313/tags/betonboringen/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/betonboringen/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Sleufwerken</title>
+      <link>http://localhost:1313/tags/sleufwerken/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/sleufwerken/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Zaagwerken</title>
+      <link>http://localhost:1313/tags/zaagwerken/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/zaagwerken/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,10 @@
+baseURL: "https://polbetonboringen.nl"
+title: "Pol Betonboringen"
+theme: blocks
+
+# -- Robot --
+enableRobotTXT: true
+
+# -- Languages --
+languageCode: "nl-nl"
+defaultContentLanguage: nl

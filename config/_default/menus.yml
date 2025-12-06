@@ -1,0 +1,22 @@
+main:
+  - name: "Over mij"
+    pageRef: "/over-mij"
+    weight: 10
+  - name: "Diensten"
+    pageRef: "/diensten"
+    weight: 20
+  - name: "Betonboringen"
+    parent: "Diensten"
+    url: "/diensten/betonboringen"
+    weight: 10
+  - name: "Sleufwerken"
+    parent: "Diensten"
+    url: "/diensten/sleufwerken"
+    weight: 20
+  - name: "Zaagwerken"
+    parent: "Diensten"
+    url: "/diensten/zaagwerken"
+    weight: 30
+  - name: "Contact"
+    pageRef: "/contact"
+    weight: 30
