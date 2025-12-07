@@ -28,6 +28,15 @@
     background: rgba(0, 0, 0, .55);
 }
 
+
+.box {
+    padding: var(--space-m);
+    background: var(--primary-0);
+    border-radius: var(--radius-m);
+    box-shadow: var(--shadow-s);
+}
+
+
 // -----------------------------------------------------------------------------
 //
 // -----------------------------------------------------------------------------
@@ -82,9 +91,10 @@ section.title {
 
 .cta .box {
     padding: var(--space-m);
-    color: var(--accent-0);
-    background: var(--accent-600);
+    //color: var(--primary-0);
+    background: var(--primary-0);
     border-radius: var(--radius-m);
+    box-shadow: var(--shadow-xs);
 
     .button {
         margin-block-start: var(--space-m);
@@ -178,7 +188,7 @@ section.title {
 
 ul.buttons.social {
     .button {
-        background: var(--primary-500);
+        background: var(--accent-500);
     }
 
     .button.icon {
