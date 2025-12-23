@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Diensten on Pol Betonboringen</title>
+    <title>Services on Pol Betonboringen</title>
     <link>http://localhost:1313/diensten/</link>
-    <description>Recent content in Diensten on Pol Betonboringen</description>
+    <description>Recent content in Services on Pol Betonboringen</description>
     <generator>Hugo</generator>
     <language>nl</language>
     <atom:link href="http://localhost:1313/diensten/index.xml" rel="self" type="application/rss+xml" />
