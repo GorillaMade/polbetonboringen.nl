@@ -1,5 +1,9 @@
 ---
 title: "Diensten"
+
+meta:
+  title: "Diensten"
+  description: "Welke diensten wij u kunnen leveren"
 ---
 {{< block_services >}}
 
