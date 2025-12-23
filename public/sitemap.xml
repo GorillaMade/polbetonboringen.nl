@@ -22,6 +22,8 @@
   </url><url>
     <loc>http://localhost:1313/nl/diensten/</loc>
   </url><url>
+    <loc>http://localhost:1313/diensten/</loc>
+  </url><url>
     <loc>http://localhost:1313/</loc>
   </url><url>
     <loc>http://localhost:1313/nl/</loc>
@@ -29,8 +31,6 @@
     <loc>http://localhost:1313/nl/over-mij/</loc>
   </url><url>
     <loc>http://localhost:1313/over-mij/</loc>
-  </url><url>
-    <loc>http://localhost:1313/diensten/</loc>
   </url><url>
     <loc>http://localhost:1313/nl/services/sleufwerken/</loc>
   </url><url>

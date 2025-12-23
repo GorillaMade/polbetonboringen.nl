@@ -10,6 +10,8 @@ image: "/uploads/diensten/kerndiamantboringen.jpg"
 
 tags:
   - Zaagwerken
+
+type: "services"
 ---
 
 Onze zaagwerken bieden een professionele oplossing voor het precies en stofarm zagen van beton, gewapend beton, asfalt en metselwerk. Met behulp van hoogwaardige diamantzaagmachines kunnen we zowel kleine als grote uitsparingen creëren in vloeren en wanden.

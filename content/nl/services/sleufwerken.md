@@ -10,6 +10,9 @@ tags:
   - Sleufwerken
 
 image: "/uploads/diensten/sleufwerken-electra.jpg"
+
+
+type: "services"
 ---
 
 Onze sleufwerken zijn perfect voor het netjes aanleggen van leidingen en kabels in zowel nieuwbouw- als renovatieprojecten. Met professionele freesmachines maken wij nauwkeurige sleuven in wanden en vloeren, zodat elektrische bedrading, waterleidingen of andere installaties netjes kunnen worden weggewerkt.
