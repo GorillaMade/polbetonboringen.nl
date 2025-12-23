@@ -1,6 +1,7 @@
 baseURL: ""
 title: ""
 theme: blocks
+assetDir: static
 
 # -- Languages --
 languageCode: "nl-nl"

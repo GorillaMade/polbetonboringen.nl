@@ -4,43 +4,72 @@
         {{- $inner = .RawContent -}}
     {{- end -}}
 {{- end -}}
+
 {{- $posts := where page.Site.RegularPages "Section" "posts" -}}
+
 <section class="posts">
+
     {{ if $inner }}
         <div class="wrapper wrapper--small">
             {{- markdownify $inner -}}
         </div>
     {{ end }}
+
     <div class="wrapper">
+
         <div class="filter">
-            <select name="filter" id="filter" class="multipleselecttags numbers_{{ page.Site.Data.settings.filter_has_numbers }}" multiple autocomplete="off" title="{{ i18n "filter tags" }}">
+            <select name="filter" id="filter"
+                class="multipleselecttags numbers_{{ page.Site.Data.settings.filter_has_numbers }}"
+                multiple autocomplete="off"
+                title="{{ i18n "filter tags" }}">
                 {{ range $name, $taxonomy := page.Site.Taxonomies.tags }}
                     <option value="{{ $name }}">{{ $name }}</option>
                 {{ end }}
             </select>
         </div>
-        <ul class="posts__list" role="list" data-pagesize="{{ page.Site.Data.settings.page_size }}">
-            {{ range $index, $posts := $posts }}
+
+        <ul class="posts__list" role="list"
+            data-pagesize="{{ page.Site.Data.settings.page_size }}">
+
+            {{ range $index, $post := $posts }}
             <li class="post__item {{ range .Params.tags }}tag_{{ . }}{{ end }}">
-                {{- if (resources.GetMatch .Params.image) -}}
-                    {{- $postimage := ((resources.GetMatch .Params.image).Fill `1200x600 jpg Smart q50`).RelPermalink -}}
-                    {{- if $postimage -}}
-                        <a href="{{ .RelPermalink }}" class="">
-                            <img src="{{ $postimage }}" alt="{{ .Title }}" onclick="document.location.href='{{ .RelPermalink }}'">
-                        </a>
-                    {{- end -}}
+
+                {{- $img := resources.GetMatch .Params.image -}}
+                {{- if $img -}}
+                    {{- $postimage := ($img.Fill "1200x600 jpg Smart q50").RelPermalink -}}
+                    <a href="{{ .RelPermalink }}">
+                        <img src="{{ $postimage }}"
+                             alt="{{ .Title }}"
+                             loading="lazy"
+                             decoding="async"
+                             onclick="document.location.href='{{ .RelPermalink }}'">
+                    </a>
                 {{- end -}}
+
                 <h3>{{ .Title | safeHTML }}</h3>
+
                 {{ if .Params.date }}
                     <div class="meta__date">
                         {{ .Date | time.Format ":date_medium" }}
                     </div>
-                {{- end -}}
+                {{ end }}
+
                 <div class="summary">
-                    <p>{{ substr (.Summary | plainify ) 0 190 | safeHTML }}...</p>
+                    <p>{{ substr (.Summary | plainify) 0 190 | safeHTML }}...</p>
                 </div>
+
             </li>
             {{ end }}
+
         </ul>
+
+        <a class="button secondary ghost smaller"
+           id="loadmoreposts"
+           onclick="loadMorePosts();">
+           {{ i18n "Load more posts" }}...
+        </a>
+
+        <script src="/js/filter.js" defer></script>
+
     </div>
 </section>

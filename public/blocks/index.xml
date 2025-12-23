@@ -12,7 +12,7 @@
       <link>http://localhost:1313/blocks/cta/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/blocks/cta/</guid>
-      <description>&lt;h3 id=&#34;ga-vandaag-nog-aan-de-slag-met-onze-betonboor-specialisten&#34;&gt;Ga vandaag nog aan de slag met onze betonboor-specialisten&lt;/h3&gt;&#xA;&lt;p&gt;Kies voor snelle, nauwkeurige en veilige betonboringen door echte vakmensen. Wij denken met u mee, leveren strak werk en zorgen dat uw project zonder vertraging kan doorgaan.&lt;/p&gt;&#xA;&lt;a href=&#34;http://localhost:1313/contact/&#34;&#xA;   class=&#34;button&#34;&#xA;   &#xA;   data-button-ghost=&#34;&#34;&#xA;   title=&#34;Neem contact op&#34;&#xA;   &gt;&#xA;   Neem contact op&#xA;&lt;/a&gt;&#xA;&#xA;&lt;p&gt;&lt;img src=&#34;http://localhost:1313/uploads/undraw_construction-workers.svg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;</description>
+      <description>&lt;h3 id=&#34;ga-vandaag-nog-aan-de-slag-met-onze-betonboor-specialisten&#34;&gt;Ga vandaag nog aan de slag met onze betonboor-specialisten&lt;/h3&gt;&#xA;&lt;p&gt;Kies voor snelle, nauwkeurige en veilige betonboringen door echte vakmensen. Wij denken met u mee, leveren strak werk en zorgen dat uw project zonder vertraging kan doorgaan.&lt;/p&gt;&#xA;&lt;a href=&#34;http://localhost:1313/contact/&#34; class=&#34;button&#34; data-button-variant=&#34;accent&#34; title=&#34;Neem contact op&#34;&gt;Neem contact op&lt;/a&gt;&#xA;&#xA;&lt;p&gt;&lt;img src=&#34;http://localhost:1313/uploads/undraw_construction-workers.svg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

@@ -1951,6 +1951,12 @@ section.title.bgimage .wrapper {
   object-fit: cover;
 }
 
+.service .meta > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .tag {
   font-size: var(--fs-step--1);
   padding: var(--space-3xs) var(--space-xs);
@@ -2010,6 +2016,17 @@ ul.buttons.social .button.icon img {
 
 .about {
   text-align: center;
+}
+
+.contact ul {
+  list-style: none;
+  padding: 0;
+}
+.contact ul li {
+  display: flex;
+  align-items: center;
+  padding-block-start: var(--space-xs);
+  gap: var(--space-2xs);
 }
 
 /*# sourceMappingURL=main.css.map */

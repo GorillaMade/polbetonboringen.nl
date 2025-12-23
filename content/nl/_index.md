@@ -42,7 +42,7 @@ Wij bieden professionele betonboringen, zaagwerken en sloopwerken met een sterke
 
 {{< /block_image >}}
 {{< block_features >}}
-  ## Onze voordelen
+## Onze voordelen
 
 Betrouwbare service, vakmanschap en modern gereedschap maken ons de ideale keuze voor al uw betonboringen en zaagwerk. Wij werken snel, precies en altijd met aandacht voor veiligheid en kwaliteit.
 

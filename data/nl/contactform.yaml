@@ -21,10 +21,6 @@ fields:
   input_type: textarea
   label: Bericht
   required: false
-- name: terms
-  input_type: checkbox
-  label: I accept the terms and conditions
-  required: true
 - name: submit
   input_type: submit
   label: Verzend
