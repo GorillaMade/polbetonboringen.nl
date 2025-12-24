@@ -36,6 +36,10 @@
     box-shadow: var(--shadow-s);
 }
 
+.colorize_image {
+    filter: contrast(1) sepia(1) hue-rotate(160deg) grayscale(0.8) !important;
+}
+
 
 // -----------------------------------------------------------------------------
 //
@@ -221,6 +225,17 @@ ul.buttons.social {
 
 .about {
     text-align: center;
+}
+
+section.about .wrapper p img {
+    border-radius: var(--radius-full);
+    overflow: hidden;
+    aspect-ratio: 1;
+    max-width: 20rem;
+    object-fit: cover;
+    justify-self: center;
+    margin-block: var(--space-s-l);
+    display: block;
 }
 
 

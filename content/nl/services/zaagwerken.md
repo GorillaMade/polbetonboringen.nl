@@ -6,7 +6,7 @@ meta:
   title: "Zaagwerken"
   description: ""
 
-image: "/uploads/diensten/kerndiamantboringen.jpg"
+image: "/uploads/IMG-20251215-WA0002_cropped_processed_by_imagy.webp"
 
 tags:
   - Zaagwerken

@@ -12,6 +12,8 @@ type: about
 
 {{< breadcrumbs >}}
 
+{{< colorize_image "Annemiek aan de telefoon" "/uploads/IMG-20251219-WA0001.webp" >}}
+
 # Hey, mijn naam is Calito Pol
 
 Ik ben Calito, oprichter van **POL Betonboringen**. Met jaren ervaring in betonboren, -zagen en slooptechnieken help ik zowel particulieren als bedrijven bij precisiewerk waar vakmanschap en betrouwbaarheid centraal staan.

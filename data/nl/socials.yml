@@ -1,10 +1,4 @@
 list:
-  - title: Facebook
-    link: https://facebook.com
-    logo_image: /img/facebook.svg 
-  - title: Instagram
-    link: https://instagram.com
-    logo_image: /img/instagram.svg
-  - title: Linkedin
-    link: https://www.linkedin.com
-    logo_image: /img/linkedin.svg
+  - title: WhatsApp
+    link: https://wa.me/+31640853342
+    logo_image: /img/whatsapp.svg

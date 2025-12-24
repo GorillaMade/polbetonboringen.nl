@@ -16,7 +16,7 @@ Wij leveren nauwkeurig en betrouwbaar boorwerk voor iedere klus.
 
 {{< button label="Laten we praten" link="/contact" variant="accent" ghost="false" >}}
 
-![](uploads/hero-image.jpeg)
+![](uploads/IMG-20251215-WA0000.webp)
 
 {{< /block_title >}}
 {{< block_services >}}
@@ -30,7 +30,7 @@ Betonboringen, zaagwerk en sloopwerk met moderne apparatuur en ervaren vakmensen
 
 ## Over Pol betonboringen
 
-![](https://images.unsplash.com/photo-1672748341520-6a839e6c05bb?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1974)
+![](uploads/IMG-20251219-WA0000.webp)
 
 Wij bieden professionele betonboringen, zaagwerken en sloopwerken met een sterke focus op klanttevredenheid. Alle werken worden persoonlijk uitgevoerd met oog voor kwaliteit, veiligheid en vakmanschap.
 

@@ -6,12 +6,10 @@ meta:
   title: "Betonboringen"
   description: ""
 
-image: "/uploads/diensten/betonboringen.webp"
+image: "/uploads/IMG-20251215-WA0001_cropped_processed_by_imagy.webp"
 
 tags:
   - betonboringen
-
-type: "services"
 ---
 
 Onze betonboringen zijn ontworpen voor zowel particulieren als bedrijven die precisie en veiligheid hoog in het vaandel hebben staan. Met moderne boortechnieken en diamantgereedschap kunnen we zowel horizontale als verticale gaten boren in wanden, vloeren en plafonds.
