@@ -58,7 +58,7 @@ Betrouwbare service, vakmanschap en modern gereedschap maken ons de ideale keuze
   ![](/img/icons/feature-icon.svg)
   ### Snelle en strak werk
 
-  Onze teams reageren snel en werken efficiënt, zonder in te leveren op kwaliteit. U kunt rekenen op duidelijke afspraken en een planning die altijd klopt met uw projectdoelen.
+  Wij reageren snel en werken efficiënt, zonder in te leveren op kwaliteit. U kunt rekenen op duidelijke afspraken en een planning die altijd klopt met uw projectdoelen.
 
   ---
 
