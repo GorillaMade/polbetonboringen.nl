@@ -12,7 +12,7 @@ type: about
 
 {{< breadcrumbs >}}
 
-{{< colorize_image "Annemiek aan de telefoon" "/uploads/IMG-20251219-WA0001.webp" >}}
+{{< colorize_image "Calito met zijn werkbus" "/uploads/IMG-20251219-WA0001.webp" >}}
 
 # Hey, mijn naam is Calito Pol
 
